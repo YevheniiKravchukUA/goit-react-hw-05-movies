@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import style from 'modules/NavBar/NavBar.module.scss';
 
-export function NavBar({}) {
+export function NavBar() {
   return (
     <ul className={style.list}>
       <li className={style.item}>
