@@ -5,7 +5,7 @@ import { fetchMovieReviews } from 'shared/api/fetchMovies';
 
 import styles from 'pages/ReviewsPage/ReviewsPage.module.scss';
 
-export function ReviewsPage() {
+export default function ReviewsPage() {
   const [reviews, setReviews] = useState([]);
   const { movieId } = useParams();
 

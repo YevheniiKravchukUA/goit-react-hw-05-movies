@@ -1,5 +1,5 @@
 import { PopularMovies } from 'modules/PopularMovies/PopularMovies';
 
-export function HomePage() {
+export default function HomePage() {
   return <PopularMovies />;
 }

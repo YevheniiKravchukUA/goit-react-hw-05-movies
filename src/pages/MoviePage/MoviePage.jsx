@@ -3,10 +3,10 @@ import { useState, useEffect, useRef } from 'react';
 
 import { feetchMovieById } from 'shared/api/fetchMovies';
 
-import { Movie } from 'modules/Movie/Movie';
+import Movie from 'modules/Movie/Movie';
 import { Section } from 'shared/components/Section/Section';
 
-export function MoviePage() {
+export default function MoviePage() {
   const [movie, setMovie] = useState({});
   const firstRender = useRef(true);
   const { movieId } = useParams();

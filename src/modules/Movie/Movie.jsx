@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import { Suspense } from 'react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import styles from 'modules/Movie/Movie.module.scss';
 
-export function Movie({ data = {} }) {
+export default function Movie({ data = {} }) {
   const {
     poster_path,
     title = 'Sorry, info not found',
@@ -71,7 +72,9 @@ export function Movie({ data = {} }) {
         </div>
       </div>
       <div className={styles.outlet}>
-        <Outlet />
+        <Suspense fallback={<div>Loading more information...</div>}>
+          <Outlet />
+        </Suspense>
       </div>
     </>
   );

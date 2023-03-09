@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 
 import { fetchMovieCast } from 'shared/api/fetchMovies';
 
-export function CastPage() {
+export default function CastPage() {
   const [cast, setCast] = useState([]);
   const { movieId } = useParams();
 
