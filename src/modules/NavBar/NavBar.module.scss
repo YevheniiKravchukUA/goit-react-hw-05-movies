@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.item {
+  &:first-child {
+    margin-right: 200px;
+  }
+}
+
+.link {
+  font-size: 25px;
+  font-weight: 600;
+  &:global(.active) {
+    color: red;
+  }
+}

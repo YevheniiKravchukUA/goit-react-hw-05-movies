@@ -1,0 +1,104 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+.infoWrapper {
+  display: block;
+
+  width: 100%;
+
+  text-align: start;
+}
+
+.image {
+  height: 400px;
+
+  margin-right: 50px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.tag {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: rgba(0, 0, 0, 0.4);
+
+  margin-bottom: 30px;
+}
+
+.text {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.textItem {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.subtitle {
+  font-weight: 600;
+}
+
+.genresList {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.genre:not(:last-child) {
+  margin-right: 10px;
+}
+
+.moreInfoList {
+  display: flex;
+
+  margin-top: 10px;
+}
+
+.moreInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100px;
+  height: 50px;
+
+  border-radius: 20px;
+
+  color: black;
+  background-color: rgb(135, 189, 255);
+
+  &:first-child {
+    margin-right: 50px;
+  }
+}
+
+.outlet {
+  width: 100%;
+  text-align: start;
+
+  padding-top: 20px;
+}
+
+.back {
+  width: 150px;
+  height: 50px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(135, 189, 255);
+
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+$colors: (
+  'background-primary': rgb(135, 189, 255),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

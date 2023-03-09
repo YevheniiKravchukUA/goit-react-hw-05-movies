@@ -1,0 +1,13 @@
+@import '../../shared/styles/styles.scss';
+
+.header {
+  @include flex;
+
+  width: 100%;
+  height: 100px;
+
+  background-color: getColor('background-primary');
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
