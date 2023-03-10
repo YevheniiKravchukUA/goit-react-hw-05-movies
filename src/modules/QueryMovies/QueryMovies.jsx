@@ -17,11 +17,6 @@ export default function QueryMovies() {
   const search = searchParams.get('query');
 
   useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    }
-
     async function getMovies() {
       try {
         const { data } = await fetchQueryMovies(search, page);
@@ -32,6 +27,11 @@ export default function QueryMovies() {
       } catch (error) {
         console.log(error);
       }
+    }
+
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
     }
 
     getMovies();
