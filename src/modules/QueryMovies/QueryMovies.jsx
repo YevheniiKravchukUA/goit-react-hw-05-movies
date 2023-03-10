@@ -3,11 +3,11 @@ import { useSearchParams } from 'react-router-dom';
 
 import { fetchQueryMovies } from 'shared/api/fetchMovies';
 
-import { SearchForm } from 'modules/QueryMovies/SearchForm/SearchForm';
-import { MoviesList } from 'shared/components/MoviesList/MoviesList';
-import { LoadMore } from './LoadMore/LoadMore';
+import SearchForm from 'modules/QueryMovies/SearchForm/SearchForm';
+import MoviesList from 'shared/components/MoviesList/MoviesList';
+import LoadMore from './LoadMore/LoadMore';
 
-export function QueryMovies() {
+export default function QueryMovies() {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
 

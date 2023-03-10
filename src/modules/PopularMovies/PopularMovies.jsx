@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 
 import { fetchMostPopularMovies } from 'shared/api/fetchMovies';
 
-import { Section } from 'shared/components/Section/Section';
-import { MoviesList } from 'shared/components/MoviesList/MoviesList';
+import Section from 'shared/components/Section/Section';
+import MoviesList from 'shared/components/MoviesList/MoviesList';
 
-export function PopularMovies() {
+export default function PopularMovies() {
   const [movies, setMovies] = useState([]);
   const [isLoad, setIsLoad] = useState(false);
 

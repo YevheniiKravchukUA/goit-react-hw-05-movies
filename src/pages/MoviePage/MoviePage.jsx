@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { feetchMovieById } from 'shared/api/fetchMovies';
 
 import Movie from 'modules/Movie/Movie';
-import { Section } from 'shared/components/Section/Section';
+import Section from 'shared/components/Section/Section';
 
 export default function MoviePage() {
   const [movie, setMovie] = useState({});

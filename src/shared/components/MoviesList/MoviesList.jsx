@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import styles from 'shared/components/MoviesList/MoviesList.module.scss';
 
-export function MoviesList({ items = [] }) {
+export default function MoviesList({ items = [] }) {
   const location = useLocation();
 
   const elements = items.map(

@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import styles from 'modules/QueryMovies/SearchForm/SearchForm.module.scss';
 
-export function SearchForm({ onFormSubmit }) {
+export default function SearchForm({ onFormSubmit }) {
   const [value, setValue] = useState('');
 
   function onSubmit(e) {

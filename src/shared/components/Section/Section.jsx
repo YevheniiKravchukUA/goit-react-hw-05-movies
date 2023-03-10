@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import styles from 'shared/components/Section/Section.module.scss';
 
-export function Section({ title, children }) {
+export default function Section({ title, children }) {
   return (
     <section className={styles.section}>
       {title && <h2 className={styles.title}>{title}</h2>}
