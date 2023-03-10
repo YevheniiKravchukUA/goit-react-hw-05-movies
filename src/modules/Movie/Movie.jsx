@@ -21,6 +21,8 @@ export default function Movie({ data = {} }) {
   const prevPage = location.state?.from || '/';
   const navigate = useNavigate();
 
+  console.log('One movie console.log');
+
   const genresElements = genres?.map(({ id, name }) => {
     return (
       <li key={id} className={styles.genre}>

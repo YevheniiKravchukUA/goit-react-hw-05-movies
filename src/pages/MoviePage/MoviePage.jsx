@@ -12,6 +12,9 @@ export default function MoviePage() {
   const { movieId } = useParams();
 
   useEffect(() => {
+    console.log(
+      'UseEffect on MoviePage, here im do fetch after first render, when movieId changes'
+    );
     if (firstRender.current) {
       firstRender.current = false;
       return;
