@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import { fetchQueryMovies } from 'shared/api/fetchMovies';
@@ -11,8 +11,6 @@ export default function QueryMovies() {
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
 
-  const firstRender = useRef(true);
-
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get('query');
 
@@ -20,18 +18,10 @@ export default function QueryMovies() {
     async function getMovies() {
       try {
         const { data } = await fetchQueryMovies(search, page);
-
-        setMovies(ps => {
-          return [...ps, ...data.results];
-        });
+        setMovies([...data.results]);
       } catch (error) {
         console.log(error);
       }
-    }
-
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
     }
 
     getMovies();

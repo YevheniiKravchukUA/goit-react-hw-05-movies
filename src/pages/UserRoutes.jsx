@@ -10,7 +10,6 @@ const CastPage = lazy(() => import('./CastPage/CastPage'));
 const ReviewsPage = lazy(() => import('./ReviewsPage/ReviewsPage'));
 
 export function UserRoutes() {
-  console.log(MoviePage);
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
